@@ -1,3 +1,4 @@
+/*
 // Global scope
 var globalVar = "I'm a global variable";
 let globalLet = "I'm also global, but scoped with let";
@@ -30,3 +31,21 @@ show();
 console.log(functionVar); // Throws ReferenceError
 console.log(functionLet); // Throws ReferenceError
 console.log(functionConst); // Throws ReferenceError
+*/
+
+{
+
+    //Using let - block-scoped, can be reassigned
+    let blockLet = "I am a block-scoped with let";
+
+    //Using const - block-scoped, cannot be reassigned
+    const blockConst = "I am block-scoped with const";
+
+    //Using var - function or global-scoped, can be reassigned
+    var blockVar = "I am function-scoped with var";
+    
+}
+
+console.log(blockLet);
+console.log(blockVar);
+console.log(blockConst)
